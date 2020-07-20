@@ -1,0 +1,16 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="calculator" />
+          <option value="todo.task.tests.test_views.task" />
+          <option value="budgetproject.budget.tests.test_urls.budget" />
+          <option value="todoApp.task.tests.test_views.task" />
+          <option value="budgetproject.budget.tests.test_urls.buubudget" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
