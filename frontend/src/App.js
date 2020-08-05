@@ -1,36 +1,44 @@
 import React, { useState, useEffect } from 'react';
+import Grid from "@material-ui/core/Grid";
 import './App.css';
 import DisplayComponent from './component/Display'
 import BtnComponent from './component/Button'
+import TimeComponent from './component/Timer';
 
 
-function App() {
+const App = () => {
 
   const [time, setTime] = useState({ms:0, s:0, m:0});
   const [interv, setInterv] = useState();
   const [status, setStatus] = useState(0);
 
-// TODO dać w use effect i usuwac event listener kiedy komponent jest unmount
 useEffect(() => {
   
-  document.addEventListener('keyup', statusbar);
-
-  function statusbar (event) {
-    if (event.keyCode === 77){
+  document.addEventListener('keyup', keyUp);
+  document.addEventListener('keydown', keyDown);
+ 
+  function keyUp (e) {
+    if (e.keyCode === 77){
       start()    
     }
-    else if (event.keyCode === 32) {
-      stop()
-    }
-    else if (event.keyCode === 81) {
+    else if (e.keyCode === 81) {
       resetDB()
     }
-    else if (event.keyCode === 80) {
+    else if (e.keyCode === 80) {
       console.log(time.m, time.s, time.ms);
     }
   }
+ 
+  function keyDown (e) {
+    if (e.keyCode === 32){
+      stop()
+    }
+  }
+
   return () =>{
-    document.removeEventListener('keyup', statusbar);
+    document.removeEventListener('keyup', keyUp);
+    document.removeEventListener('keydown', keyDown);
+
   }
 })
 
@@ -52,32 +60,41 @@ useEffect(() => {
     setTime({ms:0, s:0, m:0})
   };
 
-  // var jest zly, naprawione
-  let updMs = time.ms, updS = time.s, updM = time.m;
+  let updateMiliseconds = time.ms, updateSeconds = time.s, updateMinutes = time.m;
 
   const run = () => {
-    if(updS === 60){
-      updM ++;
-      updS = 0;  
+    if(updateSeconds === 60){
+      updateMinutes ++;
+      updateSeconds = 0;  
     }
-    if(updMs === 100){
-      updS ++;
-      updMs = 0;
+    if(updateMiliseconds === 100){
+      updateSeconds ++;
+      updateMiliseconds = 0;
     }
-    updMs ++;
-    return setTime({ms:updMs, s:updS, m:updM})
+    updateMiliseconds ++;
+    return setTime({ms:updateMiliseconds, s:updateSeconds, m:updateMinutes})
   }
 
   return (
     <div className='main-section'>
       <div className='clock-holder'>
-        <div className='stopwatch'>
-          <div className='header'>
-            <h1>TIMER RUBIC!</h1>
-          </div>
-          <DisplayComponent time = { time }/>
-          <BtnComponent status = { status } resetDB = { resetDB } stop = { stop } start={ start } />
-        </div>
+        <Grid container spacing ={3}>
+          <Grid item xs={3}></Grid>
+          <Grid item xs={6}>
+            <div className='stopwatch'>
+              <div className='header'>
+                <h1>TIMER RUBIC!</h1>
+              </div>
+                <DisplayComponent time = { time }/>
+                <BtnComponent status = { status } resetDB = { resetDB } stop = { stop } start={ start } />        
+            </div>
+          </Grid>
+          <Grid item xs={3}>
+            <div className='table-timer'>
+                <TimeComponent />
+            </div>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

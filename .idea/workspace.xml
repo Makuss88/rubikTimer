@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee41bf8a-f9d4-4c9d-ba27-63ce6c474a61" name="Default Changelist" comment="" />
+    <list default="true" id="ee41bf8a-f9d4-4c9d-ba27-63ce6c474a61" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rubikTimer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rubikTimer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/rubic/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/rubic/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/rubic/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/rubic/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/timer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/timer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/timer/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/timer/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/timer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/timer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Button/BtnComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Button/BtnComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Display/DisplayComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Display/DisplayComponent.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ewocjSMUfexrTcKmBd1TjtGNPk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,7 +34,32 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="rubikTimer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -31,5 +72,35 @@
       <updated>1595242097692</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="825" y="407" width="332" height="299" key="#Other_File_Types" timestamp="1595258582676">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="825" y="407" width="332" height="299" key="#Other_File_Types/72.27.1848.1053@72.27.1848.1053" timestamp="1595258582676" />
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595258612494">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1595258612494" />
+    <state x="804" y="272" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1595254667853">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="804" y="272" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1595254667853" />
+    <state x="602" y="119" width="777" height="876" key="CommitChangelistDialog2" timestamp="1595244024279">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="602" y="119" width="777" height="876" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1595244024279" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1595258608401">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1595258608401" />
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1595244000197">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1595244000197" />
+    <state x="767" y="468" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595259031696">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="767" y="468" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1595259031696" />
   </component>
 </project>

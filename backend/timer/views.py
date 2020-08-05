@@ -1,11 +1,14 @@
+from rest_framework.generics import ListAPIView, RetrieveAPIView
+
 from .models import Timer
-from rest_framework import viewsets
 from .serializers import TimerSerializer
 
 
-class TimerViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
+class TimerViewSet(ListAPIView):
+    queryset = Timer.objects.all()
+    serializer_class = TimerSerializer
+
+
+class TimerDetailSet(RetrieveAPIView):
     queryset = Timer.objects.all()
     serializer_class = TimerSerializer
