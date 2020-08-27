@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Grid from "@material-ui/core/Grid";
-import './App.css';
+
 import DisplayComponent from './component/Display'
 import BtnComponent from './component/Button'
-import TimeComponent from './component/Timer';
+import TableComponent from './component/Table';
 
+import './App.css';
 
 const App = () => {
 
@@ -12,12 +13,19 @@ const App = () => {
   const [interv, setInterv] = useState();
   const [status, setStatus] = useState(0);
 
-useEffect(() => {
+  useEffect(() => {
+    
+    document.addEventListener('keyup', keyUp);
+    document.addEventListener('keydown', keyDown);
   
-  document.addEventListener('keyup', keyUp);
-  document.addEventListener('keydown', keyDown);
- 
-  function keyUp (e) {
+    return () =>{
+      document.removeEventListener('keyup', keyUp);
+      document.removeEventListener('keydown', keyDown);
+
+    }
+  })
+
+  const keyUp = (e) => {
     if (e.keyCode === 77){
       start()    
     }
@@ -28,19 +36,12 @@ useEffect(() => {
       console.log(time.m, time.s, time.ms);
     }
   }
- 
-  function keyDown (e) {
+
+  const keyDown = (e) => {
     if (e.keyCode === 32){
       stop()
     }
   }
-
-  return () =>{
-    document.removeEventListener('keyup', keyUp);
-    document.removeEventListener('keydown', keyDown);
-
-  }
-})
 
   const start = () => {
     clearInterval(interv)
@@ -67,9 +68,9 @@ useEffect(() => {
       updateMinutes ++;
       updateSeconds = 0;  
     }
-    if(updateMiliseconds === 100){
+    if(updateMiliseconds === 99){
       updateSeconds ++;
-      updateMiliseconds = 0;
+      updateMiliseconds = -1;
     }
     updateMiliseconds ++;
     return setTime({ms:updateMiliseconds, s:updateSeconds, m:updateMinutes})
@@ -91,7 +92,7 @@ useEffect(() => {
           </Grid>
           <Grid item xs={3}>
             <div className='table-timer'>
-                <TimeComponent />
+                <TableComponent />
             </div>
           </Grid>
         </Grid>

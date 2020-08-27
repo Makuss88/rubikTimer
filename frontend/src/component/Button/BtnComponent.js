@@ -1,8 +1,6 @@
 import React from 'react';
 
-
 const BtnComponent = (props) => {
-
   const { status, start, stop, resetDB } = props;
     return (
       <>

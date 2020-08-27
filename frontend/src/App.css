@@ -47,12 +47,14 @@ td, th {
 
 }
 
-.stopwatch span {
+.span-stopwatch {
   background:#00ABA9;
   color: #fff;
   display: inline-block;
   padding: 20px;
   border-radius: 5px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .stopwatch-btn {
@@ -83,4 +85,8 @@ td, th {
   font-family: monospace;
   font-size: 16px;
   padding-top: 100px;
+}
+
+.p-error{
+  text-align: center;
 }
