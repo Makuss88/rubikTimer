@@ -13,13 +13,13 @@ const TimerComponent = () => {
     .then((response) => {
         setFetchedTimer(response.data);
     })
-    .catch(err => setError('SORRY, NO DATA!'));
+    .catch(err => setError('SORRY, NO DATA! ERR 404!!'));
   }, []);
 
   return ( 
     <div>
       <table border='4' align="center">
-      <caption>Your Time!</caption>  
+      <caption className='caption-table'>Your Time!</caption>  
         <thead>
           <tr>
             <th className='th'>Date</th>

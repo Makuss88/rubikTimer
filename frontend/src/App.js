@@ -58,21 +58,21 @@ const App = () => {
     setTime({ms:0, s:0, m:0});
   };
 
-  let updateMiliseconds = time.ms;
-  let updateSeconds = time.s;
-  let updateMinutes = time.m;
+  let currentMiliseconds = time.ms;
+  let currentSeconds = time.s;
+  let currentMinutes = time.m;
 
   const run = () => {
-    if(updateSeconds === 60){
-      updateMinutes ++;
-      updateSeconds = 0;  
+    if(currentSeconds === 60){
+      currentMinutes ++;
+      currentSeconds = 0;  
     }
-    if(updateMiliseconds === 99){
-      updateSeconds ++;
-      updateMiliseconds = -1;
+    if(currentMiliseconds === 99){
+      currentSeconds ++;
+      currentMiliseconds = -1;
     }
-    updateMiliseconds ++;
-    return setTime({ms:updateMiliseconds, s:updateSeconds, m:updateMinutes})
+    currentMiliseconds ++;
+    return setTime({ms:currentMiliseconds, s:currentSeconds, m:currentMinutes})
   };
 
   return (
