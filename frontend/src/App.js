@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import DisplayComponent from './component/Display';
 import BtnComponent from './component/Button';
 import TableComponent from './component/Table';
+import FormComponent from './component/Form';
 
 import { keyM, keySpace, keyP, keyQ} from './settings/settings'
 
@@ -79,14 +80,16 @@ const App = () => {
     <div className='main-section'>
       <div className='clock-holder'>
         <Grid container spacing={3}>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={3}>
+            <FormComponent time={ time } />
+          </Grid>
           <Grid item xs={6}>
             <div className='stopwatch'>
               <div className='header'>
                 <h1>TIMER RUBIC!</h1>
               </div>
-                <DisplayComponent time = { time }/>
-                <BtnComponent status = { status } resetDB = { resetDB } stop = { stop } start={ start } />        
+                <DisplayComponent time={ time }/>
+                <BtnComponent status={ status } resetDB={ resetDB } stop={ stop } start={ start } />        
             </div>
           </Grid>
           <Grid item xs={3}>

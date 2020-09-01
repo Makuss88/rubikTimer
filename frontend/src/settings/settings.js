@@ -5,3 +5,5 @@ export const keyM = 77;
 export const keySpace = 32;
 export const keyQ = 81;
 export const keyP = 80;
+
+export const mounths = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
