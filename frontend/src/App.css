@@ -1,0 +1,122 @@
+@font-face {
+  font-family: specialFont;
+  src: url('./numbers.ttf')
+}
+
+body {
+  font-size: 10px;
+  font-family: specialFont; 
+  background: #2C3E50;
+  background-size: cover;
+}
+
+.main-section {
+  background: transparent;
+  height: 600px;
+  margin: 40px 20px;
+}
+
+.clock-holder {
+  width: 100%;
+  border-radius: 60px;
+  background: cornflowerblue;
+  margin: 10px auto;
+  position: relative;
+}
+
+.header {
+  font-size: 40px;
+}
+
+.table-center {
+  width: 600px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: #C85454;
+}
+
+td, th {
+  padding: 8px;
+  border: 2px solid black; 
+  text-align: center;
+}
+
+.stopwatch {
+  padding: 10px 0px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.span-stopwatch {
+  background:#00ABA9;
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.stopwatch-btn {
+  background: #cfcfcf;
+  margin: 40px auto;
+  padding: 40px 10px;
+  font-size: 60px;
+  font-family: specialFont;
+  border-radius: 15px;
+  width: 400px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.stopwatch-btn-red {
+  color: #C85454;
+}
+
+.stopwatch-btn-yel {
+  color: #FFC900;
+}
+
+.stopwatch-btn-blue {
+  color: #00ABA9;
+}
+
+.table-timer {
+  font-family: specialFont;
+  font-size: 26px;
+  padding-top: 60px;
+}
+
+.caption-table {
+  font-size: 60px;
+}
+
+.p-error {
+  text-align: center;
+}
+
+.create {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-size: 40px;
+  font-family: specialFont;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 79.5%;
+}
+
+.rubik-mixing {
+  margin: 30px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.txt-resolve {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 34px;
+}
+

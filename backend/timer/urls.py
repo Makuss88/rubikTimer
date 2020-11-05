@@ -1,11 +1,7 @@
-from django.urls import include, path
+from .views import TimerViewSet
 from rest_framework import routers
-from timer import views
 
 router = routers.DefaultRouter()
-router.register('timer', views.TimerViewSet)
+router.register('', TimerViewSet)
 
-urlpatterns = [
-    path('', include(router.urls)),
-    path('api/timer/', include('rest_framework.urls', namespace='rest_framework'))
-]
+urlpatterns = router.urls
