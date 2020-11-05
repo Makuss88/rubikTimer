@@ -27,7 +27,7 @@ const FormComponent = (props) => {
   };
 
   const create = (event) => {
-    // event.preventDefault();
+    event.preventDefault();
     const timer = {
       title: titleToDB(),
       times: timesToDB(),

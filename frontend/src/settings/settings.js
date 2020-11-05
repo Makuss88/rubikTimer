@@ -7,3 +7,9 @@ export const keyQ = 81;
 export const keyP = 80;
 
 export const mounths = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+export const MIXING_COLOR = ['white', 'white', 'white', 'white', 'white', 'white', 'white', 'white', 'white', 
+                             'green', 'green', 'green', 'green', 'green', 'green', 'green', 'green', 'green', 
+                             'orange','orange','orange','orange','orange','orange','orange','orange','orange',
+                             'blue',  'blue',  'blue',  'blue',  'blue',  'blue',  'blue',  'blue',  'blue', 
+                             'red',   'red',   'red',   'red',   'red',   'red',   'red',   'red',   'red',   
+                             'yellow','yellow','yellow','yellow','yellow','yellow','yellow','yellow','yellow'];

@@ -12,9 +12,8 @@ body {
 
 .main-section {
   background: transparent;
-  width: 1200px;
   height: 600px;
-  margin: 20px auto;
+  margin: 40px 20px;
 }
 
 .clock-holder {
@@ -97,7 +96,6 @@ td, th {
 }
 
 .create {
-  margin: 414px 0 0 80px;
   text-align: center;
   width: 200px;
   height: 50px;
@@ -105,4 +103,20 @@ td, th {
   font-family: specialFont;
   border-radius: 20px;
   cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 79.5%;
 }
+
+.rubik-mixing {
+  margin: 30px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.txt-resolve {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 34px;
+}
+
